@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
 </head>
 <body>
-    <form action="gm"></form>
+    <header>
+        <a href="https://github.com/aleberrot">
+            <img src="/img/logo.jpeg" alt="nav_logo" class="logo">
+        </a>
+        <nav>
+            <ul class="nav_link">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://aleberrot.github.io/CV/">About</a></li>
+                <li><a href="https://discord.gg/mRxnxzpsaf">Comunidad</a></li>
+                <li><a href="form.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="contact.php" method="post" class="form">
+         <div class="elem-group"> 
+            <label for="name"><b>Nombre</b></label> 
+            <br>
+            <input class="cajita"  id="name" name="visitor_name" placeholder="Elva Ginon Moreno" pattern=[A-Z\sa-z]{3,20} required> 
+        </div> 
+        <div class="elem-group"> 
+            <br>
+            <label for="email"><b>Correo electrónico</b></label> 
+            <br>
+            <input class="cajita" type="email" id="email" name="visitor_email" placeholder="tuputamadre@gmail.com" required> 
+        </div> 
+        <div class="elem-group">
+            <br> 
+            <label for="department-selection"><b>Motivo para contactar</b></label>
+            <br> 
+            <select class="cajita" id="department-selection" name="concerned_department" required> 
+                <option value="">Selecciona un motivo</option> 
+                <option value="Alianza">Alianza</option> 
+                <option value="Tregua">Tregua</option> 
+                <option value="Are you gay bro?">Sexo🤨📸</option> </select> </div> 
+                <div class="elem-group"> 
+                <br>
+                    <label for="message"><b>Solicitud</b></label>
+                    <br> 
+                    <textarea class="cajita" id="message" name="visitor_message" placeholder="Redacta tus motivos aqui crack." required></textarea> 
+                </div> 
+                <br>
+                <button type="submit"><b> Enviar mensaje</b></button>
+            </form>
+            <video id="video" src="/video/Goku y Naruto cantando Ahora te puedes Marcha[1].mp4" width="620" controls  preload="auto"></video>
+        <script src="/js/form.js"></script>
 </body>
 </html>
